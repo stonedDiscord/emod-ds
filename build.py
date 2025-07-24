@@ -71,9 +71,9 @@ arm7.generate_elf()
 
 nds = NdsRom(
     binaries=[arm9, arm7, nitrofs],
-    game_title='Python build system',
-    game_subtitle='Built with BlocksDS',
-    game_author='github.com/blocksds/sdk',
+    game_title='emod-ds',
+    game_subtitle='built with blocksDS',
+    game_author='https://github.com/evan-ciao',
     game_icon='icon.bmp'
 )
 nds.generate_nds()
