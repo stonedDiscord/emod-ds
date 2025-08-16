@@ -11,7 +11,7 @@ jobs:
 
       - name: Install ArchitectDS dependencies
         run: |
-          sudo apt install python3 ninja-build
+          apt install python3 ninja-build
 
       - name: Build script
         run: |
