@@ -100,8 +100,7 @@ void draw3DScene(SceneData* arg)
             scene->props[i]->drawProp();
     }
 
-    // custom touch test
-    NE_CustomTouchTestStart();
+    NE_TouchTestStart();
     for (int i = 0; i < MAXRIGIDBODIES; i++)
     {
         if (scene->props[i] != nullptr)
