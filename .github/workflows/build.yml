@@ -9,9 +9,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install ArchitectDS dependencies
+        run: |
+          sudo apt install python3 ninja-build
+
       - name: Build script
         run: |
-          python build.py
+          python3 build.py
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
